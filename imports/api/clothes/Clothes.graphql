@@ -1,0 +1,56 @@
+type cloth {
+    _id: ID!
+    name: String!
+    productId: String!
+    price: Float!
+    description: String!
+    sizes:[String]
+    tag: String!
+    gender: String!
+    images:[String]
+    mainImage:String
+    comingSoon: Boolean
+    availability:Boolean!
+}
+
+
+type Query {
+    clothes(gender:String, tags:[String], search:String, minPrice:Int , maxPrice:Int ): [cloth]
+    oneItem(_id:ID!): cloth
+
+}
+
+ type Mutation {
+     addItem(
+         name: String!
+         productId: String!
+         price: Float!
+         description: String!
+         sizes:[String]
+         tag:String!
+         gender: String!
+         images:[String]
+         mainImage:String
+         comingSoon: Boolean
+         availability:Boolean!
+     ): cloth
+
+     updateClothes(
+         _id: String!
+         name: String!
+         productId: String!
+         price: Float!
+         description: String!
+         sizes:[String]
+         tag: String!
+         gender: String!
+         images:[String]
+         mainImage:String
+         comingSoon: Boolean
+         availability:Boolean!
+     ): cloth
+
+     deleteClothes(
+         _id: String!
+     ): cloth
+ }

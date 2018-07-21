@@ -1,0 +1,15 @@
+type category{
+    _id : ID
+    women : [String]
+    men: [String]
+    kids: [String]
+    other: [String]
+}
+
+extend type Query{
+    getCathegories:category
+}
+
+extend type Mutation{
+    updateCathegories(women:[String], men:[String] , kids: [String]  , other: [String] ):category
+}

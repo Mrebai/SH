@@ -1,0 +1,20 @@
+@media only screen and (max-width: 858px) {
+    .mainNavNav a {
+        font-size: 1.1rem;
+    }
+    .searchContainer{
+        height: 2rem;
+    }
+    .searchContainer input{
+        height: 2rem;
+    }
+    .searchContainer button{
+        height: 2rem;
+        left: 126px;
+
+    }
+}
+
+.navUserName{
+    color: #f68236;
+}

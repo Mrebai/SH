@@ -1,0 +1,1052 @@
+body{
+    overflow-x: hidden ;
+}
+
+.none{
+    opacity: 0;
+}
+
+.black{
+    opacity: 1;
+}
+/***************************** $$message ***********************/
+.messageContainer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top : -30px;
+    background-color: rgba(246, 130, 54, .5);
+    height: 30px;
+    color: white;
+    font-weight: bold;
+
+
+
+}
+
+.msgAnim{
+    animation-name:showMessage ;
+    animation-duration: 3s;
+
+}
+.messageContainer p {
+    text-align: center;
+    margin: auto;
+
+}
+@keyframes showMessage {
+    0% {
+        top: -30px
+    }
+    30% {
+        top: 0
+    }
+
+    80% {
+        top: 0
+    }
+    100% {
+        top: -30px
+    }
+}
+
+@keyframes hideMessage {
+    from {top: 0;}
+    to {top: -30px;}
+}
+
+.closeWindowMessage{
+
+    margin-right: auto;
+    font-size: 1.2rem;
+    color: #f68236;
+    z-index: 1001;
+}
+
+
+/***************************** $$nav ***********************/
+.mainNavNav{
+    bottom: 0;
+}
+.navbar-brand{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: auto;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+
+}
+.navbar-brand p{
+  margin: auto auto;
+  color: aliceblue;
+  text-align: center;
+  top: 3px;
+}
+.mainNavNav a{
+  padding-bottom: 0;
+  text-decoration: none;
+  color: #303030;
+  opacity: .8;
+  font-size: .8rem;
+
+}
+.mainNavNav a:hover{
+  padding-bottom: 0;
+  text-decoration: none;
+  color: #202020;
+  opacity: 1;
+}
+
+.searchContainer {
+    height: 24px;
+    margin-bottom: auto;
+    top:6px;
+    position: relative;
+
+}
+.searchContainer input{
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    max-width: 150px;
+
+}
+.searchContainer button{
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    background-color: rgba(0,0,0,.1);
+    border-left: 1px solid #c2c2c2;
+
+
+}
+/***************************** $$login ***********************/
+.SignCover{
+    top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.2);
+  z-index: 1000;
+}
+
+.SignContainer{
+  max-width: 500px;
+  height: auto;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 150px;
+  padding-bottom: 2rem;
+}
+.loginForm{
+  width: 60%;
+  margin: 1rem auto;
+
+}
+
+.defaultInput{
+  border-radius: 0;
+  border: 1px solid #c2c2c2;
+}
+
+#signIn{
+  position: relative;
+  top:1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.closeWindow{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  margin-right: auto;
+  font-size: 1.2rem;
+  color: #f68236;
+  z-index: 1001;
+}
+
+.OrangeBtnDefault{
+  padding: .5rem 2.5rem;
+  color: white;
+  background-color: #f68236;;
+  margin: auto;
+  position: relative;
+  display: block;
+  border-radius: 0;
+  opacity: .9;
+
+}
+.OrangeBtnDefault:hover{
+  text-decoration: none;
+  padding: .5rem 2.5rem;
+  color: white;
+  background-color: #f68236;;
+  margin: auto;
+  position: relative;
+  display: block;
+  border-radius: 0;
+  opacity: 1;
+
+}
+#PasswordHelp{
+  text-decoration: none;
+   text-align: right;
+
+   margin-top: .5rem;
+
+ }
+#PasswordHelp a{
+
+  color: #f68236;
+  margin-top: .5rem;
+  text-decoration: none;
+}
+#PasswordHelp a:hover{
+  text-align: right;
+  color: #f68236;
+  margin-top: .5rem;
+  text-decoration: none;
+}
+#noAccount{
+  color: #f68236;
+  text-align: center;
+  margin-top: .5rem;
+  text-decoration: none;
+}
+#noAccount a{
+  color: #f68236;
+
+  text-decoration: none;
+}
+#noAccount a:hover{
+  color: #f68236;
+
+
+  text-decoration: none;
+}
+
+
+/***************************** $$signUp ***********************/
+
+#signUp{
+    position: relative;
+    top:1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.signUpCard{
+    border-right: 1px solid #f68236 ;
+}
+
+
+
+
+/***************************** $$form ***********************/
+label{
+    color:#666666 ;
+    font-weight: bold;
+}
+.form-group{
+    margin: 2rem auto;
+}
+#itemImg{
+     width: 100%;
+     height: 250px;
+     border: 4px dashed #f68236 ;
+     background-color: rgba(246, 130, 54, .5);
+    display: table;
+}
+
+.dropzone {
+    text-align:center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 2rem;
+    color: #FFFFFF;
+    opacity: .6;
+    font-weight: bolder;
+}
+
+.submitBtn{
+    margin: auto;
+}
+
+.rc-slider-handle{
+    border: 2px solid rgba(246, 130, 54, .5);;
+}
+
+.rc-slider-handle:hover{
+    border: 2px solid rgba(246, 130, 54, .5);;
+    color: #f68236;
+}
+
+.rc-slider-handle:active{
+    border: 4px solid #f68236;
+    color: #f68236;
+}
+
+.tagsContainer{
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+}
+.optionSlelect{
+
+    font-size: .9rem;
+    width: 100%;
+}
+.advSearchMsg{
+    text-align: center;
+    margin-top: 3rem ;
+    color: #202020;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+.Interval{
+display: table;
+height: 30px;
+}
+
+.Interval p{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    line-height: 50px;
+
+}
+
+.advSearchCont{
+    background-color: #DDDDDD;
+}
+
+.allBar{
+    height:.5rem;
+
+}
+.activeBar{
+    height:.5rem;
+    background-color: #CCCCCC;
+}
+
+.my-handle{
+    height: .5rem;
+    width: .5rem;
+    background-color: black;
+}
+
+.activeBar-1{
+    background-color: #f68236;
+}
+/***************************** $$searchUi ***********************/
+.tagTitle{
+    font-size: 1.1rem;
+    color: #202020;
+}
+
+
+/***************************** $$search ***********************/
+
+.itemNotFound{
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 40%;
+}
+/***************************** $$item View ***********************/
+.imgCard{
+    max-height: 200px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.sliderImg{
+    margin: auto ;
+}
+
+.slick-next{
+    margin-right:40px ;
+
+}
+.slick-prev:before,
+.slick-next:before {
+    color: #f68236;
+    opacity: .4;
+}
+.slick-prev{
+    margin-left:40px ;
+    z-index: 999;
+
+}
+
+.itemTitle{
+    color: #303030;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.productId{
+    text-align: center;
+    margin: 0 auto;
+    color:#a3a3a3;
+    font-size: small;
+}
+
+.productPrice{
+    text-align: center;
+    color: #606060;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.productDescription{
+    text-align: center;
+    color: #606060;
+}
+
+.sizeButton{
+    margin: 20px;
+    border-radius: 0;
+
+}
+.sizeButton:focus{
+    box-shadow: transparent;
+}
+
+.addToCart{
+     margin: auto;
+     display: block;
+     margin-top: 20px;
+     background-color:  rgba(246, 130, 54, .8);;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    color: white;
+    margin-bottom: 20px;
+ }
+
+.addToCart:hover{
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    background-color:  rgba(246, 130, 54, 1);
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/***************************** $$Slider ***********************/
+.imageSlide {
+    height: 300px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.imgSlideContainer{
+    margin-top: 2rem;
+}
+
+.sliderBtn{
+    border-radius: 0;
+    background-color: transparent;
+}
+
+
+.sliderBtn a{
+    text-decoration: none;
+    color: #202020;
+}
+
+.sliderBtn a:hover{
+    text-decoration: none;
+    color: rgba(246, 130, 54, 1);
+}
+
+/***************************** $$Navigation ***********************/
+.categoryTitle{
+    margin-top: 60px;
+    text-align: center;
+
+}
+.categoryContainer{
+    margin-top: 1rem;
+    border: none;
+}
+
+.currentLocation{
+    font-size: .8rem;
+    color: #a3a3a3;
+    display: block;
+    margin-top: 2rem;
+    border: none;
+}
+
+.sliderTag{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.showMoreBtn{
+    display: block;
+    background-color: transparent;
+    font-size: 1.2rem;
+    margin: auto;
+    color: #666666;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.showMoreLink {
+    text-decoration: none;
+    color:  rgba(246, 130, 54, .7);;
+}
+
+
+.showMoreLink:hover {
+    text-decoration: none;
+    color:  rgba(246, 130, 54, 1);;
+}
+
+.notFoundCat{
+    color: #666666;
+    text-align: center;
+    margin: 3rem auto;
+    text-transform: uppercase;
+}
+/***************************** $$card ***********************/
+
+.card-title{
+    color: #303030;
+    text-align: center;
+}
+
+.card-text{
+    color: #303030;
+    text-align: center;
+    font-size: .8rem;
+
+}
+.card{
+    display: table;
+    margin: auto;
+    margin-top: 3rem;
+    width: 80%;
+    border: 1px solid transparent;
+}
+
+
+.addToCartBtn{
+    display: table-cell;
+    vertical-align: bottom;
+    horiz-align: center;
+    position: absolute;
+    margin:  auto;
+    background-color: #f68236;
+    border-radius: 0;
+    color: white;
+    opacity: .7;
+}
+
+.addToCartBtn:hover{
+    display: table-cell;
+    vertical-align: bottom;
+    horiz-align: center;
+    position: absolute;
+    margin:  auto;
+    background-color: #f68236;
+    border-radius: 0;
+    color: white;
+    opacity: 1;
+}
+
+.addToCartBtn a{
+    text-decoration: none;
+    color: white;
+}
+.addToCartBtn a:hover{
+    text-decoration: none;
+    color: white;
+}
+.imgCard{
+    display: table-cell;
+    horiz-align: center;
+}
+
+
+/***************************** $$cart ***********************/
+
+.cartImage{
+    display: block;
+    height: 80px;
+    width: auto;
+    margin: auto;
+}
+
+.cartQty{
+    max-width: 80px;
+}
+
+.cartItemName{
+    padding: auto;
+    color: #303030;
+
+}
+.cartItemSize{
+    padding: auto;
+    color: #303030;
+
+}
+.cartItemQty{
+    padding: auto;
+    color: #303030;
+
+}
+.cartItemPrice{
+    padding: auto;
+    color: #303030;
+
+}
+.cartItemBtn{
+    padding: auto;
+    color: #303030;
+
+}
+.yourCart{
+    text-align: center;
+    color: #303030 ;
+    margin-top: 1rem;
+}
+
+.itemReseved{
+    text-align: center;
+    color: #606060;
+    margin-bottom: 1rem;
+}
+
+.subTotal p span {
+    color: #f68236;
+    margin-left: 1rem;
+}
+
+.subTotal p{
+    text-align: right;
+    font-weight: bold;
+    color: #606060;
+}
+
+
+
+
+/***************************** $$home***********************/
+.col-md-6{
+    padding: 0;
+    margin: 0;
+}
+.col-md-12{
+    padding: 0;
+    margin: 0;
+}
+.comp1{
+    height: 400px;
+    width: 100%;
+
+}
+
+.comp2{
+    height: 400px;
+    width: 100%;
+
+}
+
+.comp2 div:first-child{
+    height: 200px;
+    width: 100%;
+
+}
+
+.comp2_2 {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+
+.comp2 div:first-child{
+    height: 200px;
+    width: 100%;
+
+}
+
+.comp3 div:first-child{
+    height: 200px;
+    width: 100%;
+
+}
+
+.comp3 div:nth-child(2){
+    height: 200px;
+    width: 100%;
+
+}
+
+
+.comp4 div:nth-child(2){
+    height: 200px;
+    width: 100%;
+
+}
+.comp4 div:first-child{
+    height: 200px;
+    width: 100%;
+
+}
+
+.comp5_2 {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.comp5 div:first-child{
+    height: 200px;
+    width: 100%;
+
+}
+
+.comp6{
+    height: 400px;
+    width: 100%;
+
+}
+
+
+.comp1 {
+    background-image: url("/img/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+
+
+}
+
+.comp1 button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.18);
+}
+.comp1 button:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.28);
+}
+
+
+.comp2_1{
+    background-color: rgba(0,0,0,.27);
+    display: table;
+    color: white;
+}
+.comp2_2{
+    background-image: url("/img/img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+
+}
+
+.comp2_2 button{
+    position: absolute;
+    width: 100%;
+    height:  200px;
+    background-color: rgba(0,0,0,.21);
+}
+
+.comp2_2 button:hover{
+    position: absolute;
+    width: 100%;
+    height:  200px;
+    background-color: rgba(0,0,0,.31);
+}
+
+
+.comp3_1{
+    background-image: url("/img/img3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.comp3_1 button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.24);
+}
+
+.comp3_1 button:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.34);
+}
+.comp3_2{
+    background-color: rgba(0,0,0,.64);
+    display: table;
+}
+
+.comp4_1{
+    background-image: url("/img/img4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+}
+
+.comp4_1 button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.14);
+}
+.comp4_1 button:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.24);
+}
+
+
+.comp4_2{
+    background-color: rgba(0,0,0,.62);
+    display: table;
+}
+
+
+
+
+.comp5_1{
+    background-color: rgba(0,0,0,.27);
+    display: table;
+}
+.comp5_2{
+    background-image: url("/img/img5.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+
+
+}
+
+.comp5_2 button{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,.18);
+
+}
+.comp5_2 button:hover{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,.28);
+
+}
+.comp6 {
+    background-image: url("/img/img6.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+
+
+}
+
+.comp6 button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.17);
+}
+
+.comp6 button:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.27);
+}
+
+
+
+.homePara {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.TwitterHome{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.TwitterHome1{
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.TwitterHome2{
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+
+.secondParHome{
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+/***************************** $$home ***********************/
+
+.SugImageSlide{
+    height: 150px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+
+
+.imgSlideContainer{
+    height: 150px;
+    width: 150px;
+
+}
+
+
+.btnCover {
+    position: relative;
+    background-color:  rgba(246, 130, 54, .7);
+    display: block;
+    margin: auto;
+    top: 60px;
+    color: white;
+
+}
+.btnCover:hover {
+    position: relative;
+    background-color:  rgba(246, 130, 54, 1);
+    display: block;
+    margin: auto;
+    top: 60px;
+    color: white;
+
+}
+
+/***************************** $$footer ***********************/
+.footerContainer{
+    padding-top:2rem;
+    display: block;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.footerHead{
+    font-weight: bold;
+    color: #303030;
+    text-align: center;
+    border: none;
+}
+
+.footerItem{
+    font-size: .8rem;
+    border:none;
+    text-align: center;
+
+}
+.footerItem a{
+    color: #606060;
+    text-decoration: none;
+}
+
+.footerItem a:hover{
+
+    text-decoration: none;
+    color:  rgba(246, 130, 54, .7);
+}
+
+.footerSocial .btn{
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #606060;
+    color: #606060 ;
+}
+
+.footerSocial .btn:first-child:hover{
+     background-color: #4267B2;
+     border-radius: 0;
+     border: 1px solid #606060;
+     color: #FFFFFF
+ }
+
+.footerSocial .btn:nth-child(2):hover{
+    background-color: #1DA1F2;
+    border-radius: 0;
+    border: 1px solid #606060;
+    color: #FFFFFF
+}
+
+.footerSocial .btn:nth-child(3):hover{
+    background-color: #d62976;
+    border-radius: 0;
+    border: 1px solid #606060;
+    color: #FFFFFF
+}
+
+/***************************** $$footer ***********************/
+.container404{
+    margin: 3rem auto;
+}
+.container404 h6{
+    text-align: center;
+    color: #303030;
+}
+
+.container404 p{
+    text-align: center;
+    color: #606060;
+}
+
+.nav404{
+    margin: auto;
+}

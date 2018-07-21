@@ -1,0 +1,12 @@
+type User {
+  _id: String
+  email: String
+  userName: String
+  cart:[cart]
+
+}
+
+extend type Query {
+  user: User
+
+}
