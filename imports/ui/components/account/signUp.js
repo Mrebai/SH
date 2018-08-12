@@ -8,7 +8,7 @@ export class SignUp extends Component{
             showMessage: 0
         }
     }
-    submittedForm = (e) => {
+    signUpForm = (e) => {
         e.preventDefault();
 
         if(this.SignUpPassword.value.length < 3 ){
@@ -34,7 +34,7 @@ render(){
     return(
         <Fragment>
 
-            <form onSubmit={this.submittedForm}>
+            <form onSubmit={this.signUpForm}>
                 <h6 className=" lead " id='signUp'> SIGN UP</h6>
                 <div className="form-group loginForm">
                     <label htmlFor="emailSignUp">Email Address</label>

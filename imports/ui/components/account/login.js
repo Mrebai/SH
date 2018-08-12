@@ -31,16 +31,7 @@ class Login extends Component{
             }
             this.setState({message:""});
                   this.props.client.resetStore();
-
-
         });
-
-
-
-
-
-
-
     };
 
 render(){
